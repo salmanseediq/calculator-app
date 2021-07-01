@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(222, 26%, 31%);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 300px;
+  gap: 10px;
+}
+.col-1 {
+  color: #fff;
+}
+.col-2 {
+  position: relative;
+  left: 120px;
+  color: #fff;
+}
+.col-3 {
+  position: relative;
+  right: 120px;
+  color: #fff;
+}
+.col-4 {
+  grid-column: 1/3;
+  background: hsl(223, 31%, 20%);
+  height: 100%;
+  width: 90%;
+}
+.col-5 {
+  height: 100%;
+  width: 100%;
+  background: hsl(223, 31%, 20%);
+}
+.slider {
+  width: 50px;
+}
